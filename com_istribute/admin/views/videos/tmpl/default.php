@@ -6,6 +6,9 @@ $input = JFactory::getApplication()->input;
 
 $e_name = $_GET['e_name'];
 
+$document = JFactory::getDocument();
+$document->addScript(JURI::base().'/components/com_istribute/assets/js/dropzone.js');
+
 ?>
 <style scoped>
 	.istributeVideos {

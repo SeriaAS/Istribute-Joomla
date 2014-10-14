@@ -54,14 +54,9 @@ if ($this->message != NULL) {
 
 ?>
 <p><a href="<?php echo htmlspecialchars($this->updateAppkeysUrl); ?>">Change your appkeys</a></p>
-<form enctype="multipart/form-data" method="post">
-	<div>
+<form action="<?php echo htmlspecialchars(JURI::getInstance()->toString()); ?>" class="dropzone" enctype="multipart/form-data" method="post">
+	<div class="fallback">
 		<label>Upload a video file: <input type="file" name="videoFile"></label>
-	</div>
-	<div>
-		<label>Title: <input id='videoTitle' type="text" name="videoTitle" value="Untitled video"></label>
-	</div>
-	<div>
 		<input type="submit" value="Upload">
 	</div>
 </form>

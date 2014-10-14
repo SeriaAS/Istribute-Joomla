@@ -47,7 +47,7 @@ class PlgButtonIstributebtn extends JPlugin
 			$button->link = $link;
 			$button->text = JText::_('PLG_ISTRIBUTEBTN_BUTTON');
 			$button->name = 'istributebtn';
-			$button->options = "{handler: 'iframe', size: {x: 800, y: 500}}";
+			$button->options = "{handler: 'iframe', size: {x: 950, y: 650}}";
 
 			return $button;
 		}
